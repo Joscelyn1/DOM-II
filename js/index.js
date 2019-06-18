@@ -10,6 +10,7 @@ const header = document.querySelector('header');
 
 nav.forEach((navItem) => {
     navItem.addEventListener('click', function(event) {
+        event.preventDefault();
         event.stopPropagation();
         if (navItem.style.background === 'red') {
             navItem.style.background = 'blue';
