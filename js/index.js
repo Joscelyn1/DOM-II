@@ -56,3 +56,22 @@ body.addEventListener('keydown', (event) => {
         console.log('you clicked a');
     }
 })
+
+body.addEventListener('keyup', (event) => {
+    if (event.key === 'a') {
+        console.log('you unclicked a');
+    }
+})
+
+
+body.addEventListener('copy', (event) => {
+
+    console.log('you cheated!');
+
+})
+
+body.addEventListener('cut', (event) => {
+
+    console.log("don't cut me");
+
+})
