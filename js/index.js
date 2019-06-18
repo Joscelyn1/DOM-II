@@ -6,9 +6,11 @@ const images = document.querySelectorAll('img');
 const p = document.querySelectorAll('p');
 const body = document.querySelector('body');
 const h1 = document.querySelectorAll('h1');
+const header = document.querySelector('header');
 
 nav.forEach((navItem) => {
-    navItem.addEventListener('click', function() {
+    navItem.addEventListener('click', function(event) {
+        event.stopPropagation();
         if (navItem.style.background === 'red') {
             navItem.style.background = 'blue';
         } else {
@@ -17,7 +19,9 @@ nav.forEach((navItem) => {
     });
 })
 
-
+header.addEventListener('click', function(event) {
+    header.style.background = 'purple';
+})
 
 
 images.forEach((img) => {
