@@ -5,6 +5,7 @@ const nav = document.querySelectorAll('.nav-link')
 const images = document.querySelectorAll('img');
 const p = document.querySelectorAll('p');
 const body = document.querySelector('body');
+const h1 = document.querySelectorAll('h1');
 
 nav.forEach((navItem) => {
     navItem.addEventListener('click', function() {
@@ -46,11 +47,12 @@ body.addEventListener('dblclick', (event) => {
     body.style.background = 'pink';
 })
 
-// * [ ] `mouseover`
-// * [ ] `keydown`
-// * [ ] `wheel`
-// * [ ] `drag / drop`
-// * [ ] `resize`
-// * [ ] `scroll`
-// * [ ] `select`
-// * [ ] `dblclick`
+window.addEventListener('scroll', (event) => {
+    console.log('the user is scrolling');
+});
+
+body.addEventListener('keydown', (event) => {
+    if (event.key === 'a') {
+        console.log('you clicked a');
+    }
+})
