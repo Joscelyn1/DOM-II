@@ -39,13 +39,14 @@ images.forEach((img) => {
 p.forEach((text) => {
     text.addEventListener('click', function() {
         text.style.fontSize = '16pt';
+        alert('are your investments secure? Buy gold! It\'s the safest investment there is! Buy it at the lowest possible price! https://www.bullionvault.com/')
     })
 
     text.add
 })
 
 window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
+    alert('welcome to my page!')
 });
 
 body.addEventListener('dblclick', (event) => {

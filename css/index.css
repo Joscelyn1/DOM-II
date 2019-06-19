@@ -129,7 +129,7 @@ table {
 * {
   box-sizing: border-box;
   background-color: black;
-  color: burlywood;
+  color: brown;
 }
 html {
   font-size: 62.5%;
@@ -137,6 +137,9 @@ html {
 html,
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body:hover {
+  cursor: url(../uglycursor.png), auto;
 }
 h1,
 h2,
@@ -174,6 +177,36 @@ img {
   .container {
     width: 90%;
     margin: 0 5%;
+  }
+}
+body {
+  position: relative!important;
+}
+body:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url(https://divi.space/wp-content/uploads/2019/02/hearts.png);
+  animation: falling-hearts 18s linear infinite;
+}
+@keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
+  }
+}
+@-moz-keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
+  }
+}
+@-webkit-keyframes falling-hearts {
+  0% {
+    background-position: 0% 30%;
   }
 }
 .main-navigation {
