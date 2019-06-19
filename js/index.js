@@ -42,7 +42,13 @@ p.forEach((text) => {
         alert('are your investments secure? Buy gold! It\'s the safest investment there is! Buy it at the lowest possible price! https://www.bullionvault.com/')
     })
 
-    text.add
+    text.addEventListener('mouseover', function() {
+        text.style.color = 'yellow';
+    })
+
+    text.addEventListener('mouseout', function() {
+        text.style.color = 'brown';
+    })
 })
 
 window.addEventListener('load', (event) => {
